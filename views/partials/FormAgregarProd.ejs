@@ -1,0 +1,26 @@
+<div class="container-sm text-center">
+<h2>Formulario para agregar productos</h2>
+<form class="text-start" action="/api/productos" method="post" enctype="multipart/form-data">
+
+    <div class="my-2">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" placeholder="title" value="" name="title">
+    </div>
+    <div class="my-2">
+        <label for="price">Price</label>
+        <input type="number" class="form-control" placeholder="price" value="" name="price">
+    </div>
+
+<!--     <div class="my-2">
+        <label for="thumbnail">URL</label>
+        <input type="text" class="form-control" placeholder="thumbnail" value="" name="thumbnail">
+    </div> -->
+
+    <div class="input-group my-3">
+        <input type="file" class="form-control" id="thumbnail" name="thumbnail">
+        <label class="input-group-text" for="thumbnail">Product Photo</label>
+    </div>
+    
+    <button type="submit" class="btn btn-primary my-2">Cargar producto</button>
+</form>
+</div>
